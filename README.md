@@ -9,12 +9,12 @@
 [Zhendong Yang](https://scholar.google.com/citations?user=M9qKrogAAAAJ&hl=en&oi=sra), [Ailing Zeng](https://ailingzeng.site/), [Chun Yuan](https://scholar.google.com/citations?user=fYdxi2sAAAAJ&hl=en&oi=sra), [Yu Li](http://yu-li.github.io/)
 
 <div style="display: flex; justify-content: center;">
-    <div style="text-align: center; margin-right: 20px;">
-        <img src="resources/lalaland.gif" width="320">
+    <div style="text-align: center; margin-right: 10px;">
+        <img src="resources/lalaland.gif" width="315">
         <p>DWPose</p>
     </div>
     <div style="text-align: center; ">
-        <img src="resources/iron.gif"  width="360">
+        <img src="resources/iron.gif"  width="355">
         <p>DWPose + ControlNet (<i>prompt: Ironman</i>)</p>
     </div>
 </div>
