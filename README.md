@@ -9,7 +9,7 @@
 [Zhendong Yang](https://scholar.google.com/citations?user=M9qKrogAAAAJ&hl=en&oi=sra), [Ailing Zeng](https://ailingzeng.site/), [Chun Yuan](https://scholar.google.com/citations?user=fYdxi2sAAAAJ&hl=en&oi=sra), [Yu Li](http://yu-li.github.io/)
 
 
-<img src="resources/lalaland.gif" style="height:260px" />   <img src="resources/iron.gif" style="height:260px" />  
+<img src="resources/lalaland.gif" style="height:200px" />   <img src="resources/iron.gif" style="height:200px" />  
 <p>&emsp; &emsp; &emsp;  DWPose   &emsp; &emsp; &emsp;   &emsp;&emsp; &emsp;   &emsp;  &emsp; &emsp;   &emsp; &emsp; &emsp;   &emsp;&emsp; &emsp;   &emsp; DWPose + ControlNet (<i>prompt: Ironman</i>) </p>
 
 </div>
