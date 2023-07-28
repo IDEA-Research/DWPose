@@ -8,16 +8,9 @@
 
 [Zhendong Yang](https://scholar.google.com/citations?user=M9qKrogAAAAJ&hl=en&oi=sra), [Ailing Zeng](https://ailingzeng.site/), [Chun Yuan](https://scholar.google.com/citations?user=fYdxi2sAAAAJ&hl=en&oi=sra), [Yu Li](http://yu-li.github.io/)
 
-<div align="center">
-    <div style="display: inline-block; text-align: center; margin-right: 10px;">
-        <img src="resources/lalaland.gif" width="320">
-        <p>DWPose</p>
-    </div>
-    <div style="display: inline-block; text-align: center;">
-        <img src="resources/iron.gif"  width="362">
-        <p>DWPose + ControlNet (<i>prompt: Ironman</i>)</p>
-    </div>
-</div>
+
+<img src="resources/lalaland.gif" style="height:260px" />   <img src="resources/iron.gif" style="height:260px" />  
+<p>&emsp; &emsp; &emsp;  DWPose   &emsp; &emsp; &emsp;   &emsp;&emsp; &emsp;   &emsp;  &emsp; &emsp;   &emsp; &emsp; &emsp;   &emsp;&emsp; &emsp;   &emsp; DWPose + ControlNet (<i>prompt: Ironman</i>) </p>
 
 </div>
 
