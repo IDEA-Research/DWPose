@@ -1,18 +1,24 @@
 
 <div align="center">
-
+<p align="center"> <img src="resources/logo.png" width="100px"> </p>
 <h2>Effective Whole-body Pose Estimation with Two-stages Distillation </h2> 
 
-<a href='https://arxiv.org/abs/2305.18247'><img src='https://img.shields.io/badge/ArXiv-xxxx.xxxx-red'></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href='https://arxiv.org/abs/xxxx.xxxx'><img src='https://img.shields.io/badge/ArXiv-xxxx.xxxx-red'></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 
 [Zhendong Yang](https://scholar.google.com/citations?user=M9qKrogAAAAJ&hl=en&oi=sra), [Ailing Zeng](https://ailingzeng.site/), [Chun Yuan](https://scholar.google.com/citations?user=fYdxi2sAAAAJ&hl=en&oi=sra), [Yu Li](http://yu-li.github.io/)
 
+<div style="display: flex; justify-content: center;">
+    <div style="text-align: center; margin-right: 20px;">
+        <img src="resources/lalaland.gif" width="320">
+        <p>DWPose</p>
+    </div>
+    <div style="text-align: center; ">
+        <img src="resources/iron.gif"  width="360">
+        <p>DWPose + ControlNet (<i>prompt: Ironman</i>)</p>
+    </div>
+</div>
 
- <img src="resources/lalaland.gif" width="380px">  <br>
-DWPose <br>
-<img src="resources/iron.gif" width="380px"> </a > <br>
-DWPose + ControlNet (<i>prompt: Ironman</i>) <br>
 </div>
 
 #  💃🏻  DWPose 💃🏻
