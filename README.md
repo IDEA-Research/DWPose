@@ -10,7 +10,7 @@
 
 
 <img src="resources/lalaland.gif" style="height:200px" />   <img src="resources/iron.gif" style="height:200px" />  
-<p>&emsp; &emsp; &emsp;  DWPose   &emsp; &emsp; &emsp;   &emsp;&emsp; &emsp;   &emsp;  &emsp; &emsp;   &emsp; &emsp; &emsp;   &emsp;&emsp; &emsp;   &emsp; DWPose + ControlNet (<i>prompt: Ironman</i>) </p>
+<p>&emsp; &emsp; &emsp; &emsp; &emsp; DWPose   &emsp;   &emsp;   &emsp; &emsp;   &emsp; &emsp; &emsp;   &emsp;&emsp; &emsp;   &emsp; DWPose + ControlNet (<i>prompt: Ironman</i>) </p>
 
 </div>
 
