@@ -18,7 +18,7 @@
 
 This repository is the official implementation of the [Effective Whole-body Pose Estimation with Two-stages Distillation](). Our code is based on [MMPose](https://github.com/open-mmlab/mmpose/tree/main) and [ControlNet](https://github.com/lllyasviel/ControlNet-v1-1-nightly).
 
-<img src="resources/architecture.jpg" width="650px"/>
+<p align="center"><img src="resources/architecture.jpg" width="650px"/>
 
 
 ⚔️ We release a series of models named DWPose with different sizes, from tiny to large, for human whole-body pose estimation. Besides, we also replace Openpose with DWPose for ControlNet, obtaining better Generated Images. 
@@ -29,7 +29,7 @@ See [installation instructions](INSTALL.md).
 ## 🚀 Results and Models
 ### 😎 DWPose on COCO. We release a series of DWPose models.
 
-<img src="resources/compare.jpg" width="350px"/>
+<p align="center"><img src="resources/compare.jpg" width="350px"/>
 
 Results on COCO-WholeBody v1.0 val with detector having human AP of 56.4 on COCO val2017 dataset
 
@@ -49,10 +49,10 @@ python gradio_dw_open_pose.py
 ```
 
 #### Non-cherry-picked test with random seed 12345 ("spider man"):
-<img src="resources/jay_pose.jpg" width="600px"/>
+<p align="center"><img src="resources/jay_pose.jpg" width="600px"/>
 
 #### Comparison with OpenPose
-<img src="resources/generation.jpg" width="600px"/>
+<p align="center"><img src="resources/generation.jpg" width="600px"/>
 
 ## 🚢 Datasets
 Prepare [COCO](https://cocodataset.org/#download) in mmpose/data/coco and [UBody](https://github.com/IDEA-Research/OSX) in mmpose/data/UBody.
