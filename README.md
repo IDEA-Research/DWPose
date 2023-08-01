@@ -23,6 +23,10 @@ This repository is the official implementation of the [Effective Whole-body Pose
 
 ⚔️ We release a series of models named DWPose with different sizes, from tiny to large, for human whole-body pose estimation. Besides, we also replace Openpose with DWPose for ControlNet, obtaining better Generated Images. 
 
+📆 Thanks to [MMPose](https://github.com/open-mmlab/mmpose/tree/main). You can try our DWPose with this [demo](https://openxlab.org.cn/apps/detail/mmpose/RTMPose) by choosing wholebody!
+
+<p align="center"><img src="resources/demo.png" width="750px"/>
+
 ## 🐟 Installation
 See [installation instructions](INSTALL.md).
 
