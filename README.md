@@ -25,7 +25,7 @@ This repository is the official implementation of the [Effective Whole-body Pose
 
 📆 Thanks to [MMPose](https://github.com/open-mmlab/mmpose/tree/main). You can try our DWPose with this [demo](https://openxlab.org.cn/apps/detail/mmpose/RTMPose) by choosing wholebody!
 
-<p align="center"><img src="resources/demo.png" width="750px"/>
+<p align="center"><img src="resources/demo.png">
 
 ## 🐟 Installation
 See [installation instructions](INSTALL.md).
