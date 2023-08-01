@@ -3,7 +3,7 @@
 <p align="center"> <img src="resources/logo.png" width="100px"> </p>
 <h2>Effective Whole-body Pose Estimation with Two-stages Distillation </h2> 
 
-<a href='https://arxiv.org/abs/xxxx.xxxx'><img src='https://img.shields.io/badge/ArXiv-xxxx.xxxx-red'></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href='https://arxiv.org/abs/2307.15880'><img src='https://img.shields.io/badge/ArXiv-2307.15880-red'></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 
 [Zhendong Yang](https://scholar.google.com/citations?user=M9qKrogAAAAJ&hl=en&oi=sra), [Ailing Zeng](https://ailingzeng.site/), [Chun Yuan](https://scholar.google.com/citations?user=fYdxi2sAAAAJ&hl=en&oi=sra), [Yu Li](http://yu-li.github.io/)
@@ -16,7 +16,7 @@
 
 #  💃🏻  DWPose 💃🏻
 
-This repository is the official implementation of the [Effective Whole-body Pose Estimation with Two-stages Distillation](). Our code is based on [MMPose](https://github.com/open-mmlab/mmpose/tree/main) and [ControlNet](https://github.com/lllyasviel/ControlNet-v1-1-nightly).
+This repository is the official implementation of the [Effective Whole-body Pose Estimation with Two-stages Distillation](https://arxiv.org/abs/2307.15880). Our code is based on [MMPose](https://github.com/open-mmlab/mmpose/tree/main) and [ControlNet](https://github.com/lllyasviel/ControlNet-v1-1-nightly).
 
 <p align="center"><img src="resources/architecture.jpg" width="650px"/>
 
@@ -99,10 +99,10 @@ bash tools/dist_test.sh configs/wholebody_2d_keypoint/rtmpose/ubody/rtmpose-l_8x
 
 ## 🥳 Citation
 ```
-@article{yang2022vitkd,
+@article{yang2023effective,
   title={Effective Whole-body Pose Estimation with Two-stages Distillation},
   author={Yang, Zhendong and Zeng, Ailing and Yuan, Chun and Li, Yu},
-  journal={arXiv preprint arXiv:2209.02432},
+  journal={arXiv preprint arXiv:2307.15880},
   year={2023}
 }
 ```
