@@ -14,7 +14,7 @@ pip install -r requirements.txt
 conda env create -f environment.yaml
 conda activate control-v11
 ```
-🌵 Second, install tools to apply RTMPose to ControlNet
+🌵 Second, install tools to apply DWPose to ControlNet
 ```
 # Set environment
 pip install -U openmim
