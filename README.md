@@ -15,6 +15,7 @@
 </div>
 
 #  💃🏻  DWPose 💃🏻
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/effective-whole-body-pose-estimation-with-two/2d-human-pose-estimation-on-coco-wholebody-1)](https://paperswithcode.com/sota/2d-human-pose-estimation-on-coco-wholebody-1?p=effective-whole-body-pose-estimation-with-two)
 
 This repository is the official implementation of the [Effective Whole-body Pose Estimation with Two-stages Distillation](https://arxiv.org/abs/2307.15880). Our code is based on [MMPose](https://github.com/open-mmlab/mmpose/tree/main) and [ControlNet](https://github.com/lllyasviel/ControlNet-v1-1-nightly).
 
