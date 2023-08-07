@@ -3,7 +3,9 @@
 <p align="center"> <img src="resources/logo.png" width="100px"> </p>
 <h2>Effective Whole-body Pose Estimation with Two-stages Distillation </h2> 
 
-<a href='https://arxiv.org/abs/2307.15880'><img src='https://img.shields.io/badge/ArXiv-2307.15880-red'></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href='https://arxiv.org/abs/2307.15880'><img src='https://img.shields.io/badge/ArXiv-2307.15880-red'></a>
+
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/effective-whole-body-pose-estimation-with-two/2d-human-pose-estimation-on-coco-wholebody-1)](https://paperswithcode.com/sota/2d-human-pose-estimation-on-coco-wholebody-1?p=effective-whole-body-pose-estimation-with-two)
 
 
 [Zhendong Yang](https://scholar.google.com/citations?user=M9qKrogAAAAJ&hl=en&oi=sra), [Ailing Zeng](https://ailingzeng.site/), [Chun Yuan](https://scholar.google.com/citations?user=fYdxi2sAAAAJ&hl=en&oi=sra), [Yu Li](http://yu-li.github.io/)
@@ -15,8 +17,6 @@
 </div>
 
 #  💃🏻  DWPose 💃🏻
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/effective-whole-body-pose-estimation-with-two/2d-human-pose-estimation-on-coco-wholebody-1)](https://paperswithcode.com/sota/2d-human-pose-estimation-on-coco-wholebody-1?p=effective-whole-body-pose-estimation-with-two)
-
 This repository is the official implementation of the [Effective Whole-body Pose Estimation with Two-stages Distillation](https://arxiv.org/abs/2307.15880). Our code is based on [MMPose](https://github.com/open-mmlab/mmpose/tree/main) and [ControlNet](https://github.com/lllyasviel/ControlNet-v1-1-nightly).
 
 <p align="center"><img src="resources/architecture.jpg" width="650px"/>
@@ -24,12 +24,11 @@ This repository is the official implementation of the [Effective Whole-body Pose
 
 ⚔️ We release a series of models named DWPose with different sizes, from tiny to large, for human whole-body pose estimation. Besides, we also replace Openpose with DWPose for ControlNet, obtaining better Generated Images. 
 
-📆 Thanks to [MMPose](https://github.com/open-mmlab/mmpose/tree/main). You can try our DWPose with this [demo](https://openxlab.org.cn/apps/detail/mmpose/RTMPose) by choosing wholebody!
-
-<p align="center"><img src="resources/demo.png">
-
 ## 🔥 News
 - **`2023/08/07`**: We release a new DWPose with onnx. You can avoid installing mmcv through this. See branch [onnx](https://github.com/IDEA-Research/DWPose/tree/onnx).
+- **`2023/08/01`**: Thanks to [MMPose](https://github.com/open-mmlab/mmpose/tree/main). You can try our DWPose with this [demo](https://openxlab.org.cn/apps/detail/mmpose/RTMPose) by choosing wholebody!
+
+<p align="center"><img src="resources/demo.png" width="800px">
 
 ## 🐟 Installation
 See [installation instructions](INSTALL.md). This branch uses onnx. You can try DWPose for ControlNet without mmcv.
