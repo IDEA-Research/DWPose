@@ -29,7 +29,7 @@ This repository is the official implementation of the [Effective Whole-body Pose
 <p align="center"><img src="resources/demo.png">
 
 ## 🐟 Installation
-See [installation instructions](INSTALL.md).
+See [installation instructions](INSTALL.md). This branch uses onnx. You can try DWPose for ControlNet without mmcv.
 
 ## 🚀 Results and Models
 ### 😎 DWPose on COCO. We release a series of DWPose models.
@@ -47,7 +47,7 @@ Results on COCO-WholeBody v1.0 val with detector having human AP of 56.4 on COCO
 | [DWPose-l](mmpose/configs/wholebody_2d_keypoint/rtmpose/ubody/rtmpose-l_8xb32-270e_coco-ubody-wholebody-384x288.py) |  384x288   |10.1|  0.722  |  0.704  |  0.887  |  0.621  |  0.665   | [baidu drive](https://pan.baidu.com/s/168T2XGXQDli8j03e_dOJdg?pwd=ajcq) | [google drive](https://drive.google.com/file/d/1Oy9O18cYk8Dk776DbxpCPWmJtJCl-OCm/view?usp=sharing) |
 
 ### 🦈 DWPose for ControlNet.
-First, you need to download our SOTA model [DWPose-l_384x288](https://drive.google.com/file/d/1Oy9O18cYk8Dk776DbxpCPWmJtJCl-OCm/view?usp=sharing) and put it into ControlNet-v1-1-nightly/annotator/ckpts. Then you can use DWPose to generate the images you like.
+First, you need to download our Pose model dw-ll_ucoco_384.onnx ([baidu](https://pan.baidu.com/s/1nuBjw-KKSxD_BkpmwXUJiw?pwd=28d7), [google](https://drive.google.com/file/d/12L8E2oAgZy4VACGSK9RaZBZrfgx7VTA2/view?usp=sharing)) and Det model yolox_l.onnx ([baidu](https://pan.baidu.com/s/1fpfIVpv5ypo4c1bUlzkMYQ?pwd=mjdn), [google](https://drive.google.com/file/d/1w9pXC8tT0p9ndMN-CArp1__b2GbzewWI/view?usp=sharing)), then put them into ControlNet-v1-1-nightly/annotator/ckpts. Then you can use DWPose to generate the images you like.
 ```
 cd ControlNet-v1-1-nightly
 python gradio_dw_open_pose.py
