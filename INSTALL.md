@@ -1,5 +1,5 @@
 # Installation
-## 📙 We support two independent environments. You just need to install corresponding enviroment.
+## 📙 We support two independent environments. You just need to install corresponding environment.
 ## For MMPose
 🌵🌵🌵 This environment helps you to train and test our DWPose. You can ignore the following installation for ControlNet.
 
