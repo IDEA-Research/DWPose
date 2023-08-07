@@ -46,25 +46,7 @@ def preprocess(
         out_center.append(center)
         out_scale.append(scale)
 
-    # return resized_img, center, scale
     return out_img, out_center, out_scale
-
-
-def build_session(onnx_file: str, device: str = 'cpu') -> ort.InferenceSession:
-    """Build onnxruntime session.
-
-    Args:
-        onnx_file (str): ONNX file path.
-        device (str): Device type for inference.
-
-    Returns:
-        sess (ort.InferenceSession): ONNXRuntime session.
-    """
-    providers = ['CPUExecutionProvider'
-                 ] if device == 'cpu' else ['CUDAExecutionProvider']
-    sess = ort.InferenceSession(path_or_bytes=onnx_file, providers=providers)
-
-    return sess
 
 
 def inference(sess: ort.InferenceSession, img: np.ndarray) -> np.ndarray:
@@ -92,7 +74,6 @@ def inference(sess: ort.InferenceSession, img: np.ndarray) -> np.ndarray:
         outputs = sess.run(sess_output, sess_input)
         all_out.append(outputs)
 
-    # return outputs
     return all_out
 
 
@@ -128,7 +109,6 @@ def postprocess(outputs: List[np.ndarray],
         all_key.append(keypoints[0])
         all_score.append(scores[0])
 
-    # return keypoints, scores
     return np.array(all_key), np.array(all_score)
 
 

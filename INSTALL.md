@@ -23,4 +23,6 @@ conda activate control-v11
 ```
 # Set ControlNet environment
 pip install onnxruntime
+# if gpu is available
+pip install onnxruntime-gpu
 ```
