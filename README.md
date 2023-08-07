@@ -28,6 +28,9 @@ This repository is the official implementation of the [Effective Whole-body Pose
 
 <p align="center"><img src="resources/demo.png">
 
+## 🔥 News
+- **`2023/08/07`**: We release a new DWPose with onnx. You can avoid installing mmcv through this. See branch [onnx](https://github.com/IDEA-Research/DWPose/tree/onnx).
+
 ## 🐟 Installation
 See [installation instructions](INSTALL.md). This branch uses onnx. You can try DWPose for ControlNet without mmcv.
 
