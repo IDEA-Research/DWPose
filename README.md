@@ -8,7 +8,7 @@
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/effective-whole-body-pose-estimation-with-two/2d-human-pose-estimation-on-coco-wholebody-1)](https://paperswithcode.com/sota/2d-human-pose-estimation-on-coco-wholebody-1?p=effective-whole-body-pose-estimation-with-two)
 
 
-[Zhendong Yang](https://scholar.google.com/citations?user=M9qKrogAAAAJ&hl=en&oi=sra), [Ailing Zeng](https://ailingzeng.site/), [Chun Yuan](https://scholar.google.com/citations?user=fYdxi2sAAAAJ&hl=en&oi=sra), [Yu Li](http://yu-li.github.io/)
+[Zhendong Yang](https://yzd-v.github.io/page/), [Ailing Zeng](https://ailingzeng.site/), [Chun Yuan](https://scholar.google.com/citations?user=fYdxi2sAAAAJ&hl=en&oi=sra), [Yu Li](http://yu-li.github.io/)
 
 
 <img src="resources/lalaland.gif" style="height:200px" />   <img src="resources/iron.gif" style="height:200px" />  
