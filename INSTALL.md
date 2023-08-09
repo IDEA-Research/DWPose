@@ -19,7 +19,7 @@ pip install -r requirements.txt
 conda env create -f environment.yaml
 conda activate control-v11
 ```
-🌵 Second, install tools to apply DWPose to ControlNet. If it's hard to install mmcv, you can refer branch [onnx](https://github.com/IDEA-Research/DWPose/tree/onnx), which just needs onnxruntime.
+🌵 Second, install tools to apply DWPose to ControlNet. If it's hard to install mmcv, you can refer branch [onnx](https://github.com/IDEA-Research/DWPose/tree/onnx) or [opencv_onnx](https://github.com/IDEA-Research/DWPose/tree/opencv_onnx).
 ```
 # Set ControlNet environment
 pip install -U openmim
