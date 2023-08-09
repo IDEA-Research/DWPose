@@ -19,7 +19,7 @@ pip install -r requirements.txt
 conda env create -f environment.yaml
 conda activate control-v11
 ```
-🌵 Second, install tools to apply DWPose to ControlNet
+🌵 Second, install tools to apply DWPose to ControlNet. If it's hard to install onnxruntime, you can refer branch [opencv_onnx](https://github.com/IDEA-Research/DWPose/tree/opencv_onnx), which runs the onnx model with opencv.
 ```
 # Set ControlNet environment
 pip install onnxruntime
