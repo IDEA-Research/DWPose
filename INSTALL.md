@@ -13,16 +13,10 @@ pip install -r requirements.txt
 ## For ControlNet
 🌵🌵🌵 This environment helps you to apply DWPose to ControlNet. You can ignore the above installation for mmpose.
 
-🌵 First, make sure to run ControlNet successfully.
+🌵 Make sure to run ControlNet successfully.
 ```
 # Set ControlNet environment
 conda env create -f environment.yaml
 conda activate control-v11
 ```
-🌵 Second, install tools to apply DWPose to ControlNet
-```
-# Set ControlNet environment
-pip install onnxruntime
-# if gpu is available
-pip install onnxruntime-gpu
-```
+🌵 (Optional) If you want DWPose to work with your GPU, you need to manually build OpenCV through cmake.

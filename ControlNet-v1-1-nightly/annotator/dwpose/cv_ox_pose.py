@@ -2,12 +2,11 @@ from typing import List, Tuple
 
 import cv2
 import numpy as np
-import onnxruntime as ort
 
 def preprocess(
     img: np.ndarray, out_bbox, input_size: Tuple[int, int] = (192, 256)
 ) -> Tuple[np.ndarray, np.ndarray, np.ndarray]:
-    """Do preprocessing for RTMPose model inference.
+    """Do preprocessing for DWPose model inference.
 
     Args:
         img (np.ndarray): Input image in shape.
@@ -49,29 +48,26 @@ def preprocess(
     return out_img, out_center, out_scale
 
 
-def inference(sess: ort.InferenceSession, img: np.ndarray) -> np.ndarray:
-    """Inference RTMPose model.
+def inference(sess, img):
+    """Inference DWPose model.
 
     Args:
-        sess (ort.InferenceSession): ONNXRuntime session.
-        img (np.ndarray): Input image in shape.
+        sess : ONNXRuntime session.
+        img : Input image in shape.
 
     Returns:
-        outputs (np.ndarray): Output of RTMPose model.
+        outputs : Output of DWPose model.
     """
     all_out = []
     # build input
     for i in range(len(img)):
-        input = [img[i].transpose(2, 0, 1)]
 
-        # build output
-        sess_input = {sess.get_inputs()[0].name: input}
-        sess_output = []
-        for out in sess.get_outputs():
-            sess_output.append(out.name)
+        input = img[i].transpose(2, 0, 1)
+        input = input[None, :, :, :]
 
-        # run model
-        outputs = sess.run(sess_output, sess_input)
+        outNames = sess.getUnconnectedOutLayersNames()
+        sess.setInput(input)
+        outputs = sess.forward(outNames)
         all_out.append(outputs)
 
     return all_out
@@ -83,7 +79,7 @@ def postprocess(outputs: List[np.ndarray],
                 scale: Tuple[int, int],
                 simcc_split_ratio: float = 2.0
                 ) -> Tuple[np.ndarray, np.ndarray]:
-    """Postprocess for RTMPose model output.
+    """Postprocess for DWPose model output.
 
     Args:
         outputs (np.ndarray): Output of RTMPose model.
@@ -351,8 +347,7 @@ def decode(simcc_x: np.ndarray, simcc_y: np.ndarray,
 
 
 def inference_pose(session, out_bbox, oriImg):
-    h, w = session.get_inputs()[0].shape[2:]
-    model_input_size = (w, h)
+    model_input_size = (288, 384)
     resized_img, center, scale = preprocess(oriImg, out_bbox, model_input_size)
     outputs = inference(session, resized_img)
     keypoints, scores = postprocess(outputs, model_input_size, center, scale)

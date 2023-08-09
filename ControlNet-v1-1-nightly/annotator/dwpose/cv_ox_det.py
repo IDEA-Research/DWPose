@@ -1,8 +1,6 @@
 import cv2
 import numpy as np
 
-import onnxruntime
-
 def nms(boxes, scores, nms_thr):
     """Single class NMS implemented in Numpy."""
     x1 = boxes[:, 0]
@@ -99,8 +97,11 @@ def inference_detector(session, oriImg):
     input_shape = (640,640)
     img, ratio = preprocess(oriImg, input_shape)
 
-    ort_inputs = {session.get_inputs()[0].name: img[None, :, :, :]}
-    output = session.run(None, ort_inputs)
+    input = img[None, :, :, :]
+    outNames = session.getUnconnectedOutLayersNames()
+    session.setInput(input)
+    output = session.forward(outNames)
+
     predictions = demo_postprocess(output[0], input_shape)[0]
 
     boxes = predictions[:, :4]

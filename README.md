@@ -25,6 +25,7 @@ This repository is the official implementation of the [Effective Whole-body Pose
 ⚔️ We release a series of models named DWPose with different sizes, from tiny to large, for human whole-body pose estimation. Besides, we also replace Openpose with DWPose for ControlNet, obtaining better Generated Images. 
 
 ## 🔥 News
+- **`2023/08/09`**: We support to run onnx model with cv2. You can avoid installing onnxruntime. See branch [opencv_onnx](https://github.com/IDEA-Research/DWPose/tree/opencv_onnx).
 - **`2023/08/07`**: We upload all DWPose models to [huggingface](https://huggingface.co/yzd-v/DWPose/tree/main). Now, you can download them from baidu drive, google drive and huggingface.
 - **`2023/08/07`**: We release a new DWPose with onnx. You can avoid installing mmcv through this. See branch [onnx](https://github.com/IDEA-Research/DWPose/tree/onnx).
 - **`2023/08/01`**: Thanks to [MMPose](https://github.com/open-mmlab/mmpose/tree/main). You can try our DWPose with this [demo](https://openxlab.org.cn/apps/detail/mmpose/RTMPose) by choosing wholebody!
@@ -32,7 +33,7 @@ This repository is the official implementation of the [Effective Whole-body Pose
 <p align="center"><img src="resources/demo.png" width="800px">
 
 ## 🐟 Installation
-See [installation instructions](INSTALL.md). This branch uses onnx. You can try DWPose for ControlNet without mmcv.
+See [installation instructions](INSTALL.md). This branch uses onnx with cv2. You can try DWPose for ControlNet without extra dependency.
 
 ## 🚀 Results and Models
 ### 😎 DWPose on COCO. We release a series of DWPose models.

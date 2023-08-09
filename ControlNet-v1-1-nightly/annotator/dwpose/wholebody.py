@@ -1,20 +1,26 @@
 import cv2
 import numpy as np
 
-import onnxruntime as ort
-from .onnxdet import inference_detector
-from .onnxpose import inference_pose
+from .cv_ox_det import inference_detector
+from .cv_ox_pose import inference_pose
 
 class Wholebody:
     def __init__(self):
-        device = 'cuda:0'
-        providers = ['CPUExecutionProvider'
-                 ] if device == 'cpu' else ['CUDAExecutionProvider']
+        device = 'cpu'
+        backend = cv2.dnn.DNN_BACKEND_OPENCV if device == 'cpu' else cv2.dnn.DNN_BACKEND_CUDA
+        # You need to manually build OpenCV through cmake to work with your GPU.
+        providers = cv2.dnn.DNN_TARGET_CPU if device == 'cpu' else cv2.dnn.DNN_TARGET_CUDA
+
         onnx_det = 'annotator/ckpts/yolox_l.onnx'
         onnx_pose = 'annotator/ckpts/dw-ll_ucoco_384.onnx'
 
-        self.session_det = ort.InferenceSession(path_or_bytes=onnx_det, providers=providers)
-        self.session_pose = ort.InferenceSession(path_or_bytes=onnx_pose, providers=providers)
+        self.session_det = cv2.dnn.readNetFromONNX(onnx_det)
+        self.session_det.setPreferableBackend(backend)
+        self.session_det.setPreferableTarget(providers)
+
+        self.session_pose = cv2.dnn.readNetFromONNX(onnx_pose)
+        self.session_pose.setPreferableBackend(backend)
+        self.session_pose.setPreferableTarget(providers)
     
     def __call__(self, oriImg):
         det_result = inference_detector(self.session_det, oriImg)
