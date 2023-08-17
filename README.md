@@ -17,7 +17,7 @@
 </div>
 
 #  💃🏻  DWPose 💃🏻
-This repository is the official implementation of the [Effective Whole-body Pose Estimation with Two-stages Distillation](https://arxiv.org/abs/2307.15880). Our code is based on [MMPose](https://github.com/open-mmlab/mmpose/tree/main) and [ControlNet](https://github.com/lllyasviel/ControlNet-v1-1-nightly).
+This repository is the official implementation of the [Effective Whole-body Pose Estimation with Two-stages Distillation](https://arxiv.org/abs/2307.15880) (ICCV 2023, CV4Metaverse Workshop). Our code is based on [MMPose](https://github.com/open-mmlab/mmpose/tree/main) and [ControlNet](https://github.com/lllyasviel/ControlNet-v1-1-nightly).
 
 <p align="center"><img src="resources/architecture.jpg" width="650px"/>
 
@@ -25,7 +25,10 @@ This repository is the official implementation of the [Effective Whole-body Pose
 ⚔️ We release a series of models named DWPose with different sizes, from tiny to large, for human whole-body pose estimation. Besides, we also replace Openpose with DWPose for ControlNet, obtaining better Generated Images. 
 
 ## 🔥 News
+- **`2023/08/17`**: Our paper [Effective Whole-body Pose Estimation with Two-stages Distillation](https://arxiv.org/abs/2307.15880) is accepted by ICCV 2023, CV4Metaverse Workshop. 🎉 🎉 🎉
+
 - **`2023/08/09`**: You can try DWPose with [sd-webui-controlnet](https://github.com/Mikubill/sd-webui-controlnet) now! Just update your sd-webui-controlnet >= v1.1237, then choose dw_openpose_full as preprocessor.
+
 - **`2023/08/09`**: We support to run onnx model with cv2. You can avoid installing onnxruntime. See branch [opencv_onnx](https://github.com/IDEA-Research/DWPose/tree/opencv_onnx).
 - **`2023/08/07`**: We upload all DWPose models to [huggingface](https://huggingface.co/yzd-v/DWPose/tree/main). Now, you can download them from baidu drive, google drive and huggingface.
 - **`2023/08/07`**: We release a new DWPose with onnx. You can avoid installing mmcv through this. See branch [onnx](https://github.com/IDEA-Research/DWPose/tree/onnx).
