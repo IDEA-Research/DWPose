@@ -112,10 +112,11 @@ bash tools/dist_test.sh configs/wholebody_2d_keypoint/rtmpose/ubody/rtmpose-l_8x
 
 ## 🥳 Citation
 ```
-@article{yang2023effective,
-  title={Effective Whole-body Pose Estimation with Two-stages Distillation},
+@inproceedings{yang2023effective,
+  title={Effective whole-body pose estimation with two-stages distillation},
   author={Yang, Zhendong and Zeng, Ailing and Yuan, Chun and Li, Yu},
-  journal={arXiv preprint arXiv:2307.15880},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  pages={4210--4220},
   year={2023}
 }
 ```
