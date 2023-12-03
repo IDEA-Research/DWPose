@@ -25,6 +25,7 @@ This repository is the official implementation of the [Effective Whole-body Pose
 ⚔️ We release a series of models named DWPose with different sizes, from tiny to large, for human whole-body pose estimation. Besides, we also replace Openpose with DWPose for ControlNet, obtaining better Generated Images. 
 
 ## 🔥 News
+- **`2023/12/03`**: DWPose supports [Consistent and Controllable Image-to-Video Synthesis for Character Animation](https://humanaigc.github.io/animate-anyone/).
 - **`2023/08/17`**: Our paper [Effective Whole-body Pose Estimation with Two-stages Distillation](https://arxiv.org/abs/2307.15880) is accepted by ICCV 2023, CV4Metaverse Workshop. 🎉 🎉 🎉
 
 - **`2023/08/09`**: You can try DWPose with [sd-webui-controlnet](https://github.com/Mikubill/sd-webui-controlnet) now! Just update your sd-webui-controlnet >= v1.1237, then choose dw_openpose_full as preprocessor.
