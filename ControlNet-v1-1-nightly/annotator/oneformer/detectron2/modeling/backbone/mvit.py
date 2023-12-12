@@ -60,7 +60,7 @@ class MultiScaleAttention(nn.Module):
             stride_q (int): stride size for q pooling layer.
             stride_kv (int): stride size for kv pooling layer.
             residual_pooling (bool): If true, enable residual pooling.
-            use_rel_pos (bool): If True, add relative postional embeddings to the attention map.
+            use_rel_pos (bool): If True, add relative positional embeddings to the attention map.
             rel_pos_zero_init (bool): If True, zero initialize relative positional parameters.
             input_size (int or None): Input resolution.
         """
@@ -212,7 +212,7 @@ class MultiScaleBlock(nn.Module):
             residual_pooling (bool): If true, enable residual pooling.
             window_size (int): Window size for window attention blocks. If it equals 0, then not
                 use window attention.
-            use_rel_pos (bool): If True, add relative postional embeddings to the attention map.
+            use_rel_pos (bool): If True, add relative positional embeddings to the attention map.
             rel_pos_zero_init (bool): If True, zero initialize relative positional parameters.
             input_size (int or None): Input resolution.
         """
@@ -322,7 +322,7 @@ class MViT(Backbone):
             norm_layer (nn.Module): Normalization layer.
             act_layer (nn.Module): Activation layer.
             use_abs_pos (bool): If True, use absolute positional embeddings.
-            use_rel_pos (bool): If True, add relative postional embeddings to the attention map.
+            use_rel_pos (bool): If True, add relative positional embeddings to the attention map.
             rel_pos_zero_init (bool): If True, zero initialize relative positional parameters.
             window_size (int): Window size for window attention blocks.
             use_act_checkpoint (bool): If True, use activation checkpointing.
