@@ -68,6 +68,15 @@ python gradio_dw_open_pose.py
 #### Comparison with OpenPose
 <p align="center"><img src="resources/generation.jpg" width="600px"/>
 
+#### Run inference on any images
+
+```
+cd ControlNet-v1-1-nightly
+python dwpose_infer_example.py
+```
+Note: Please change the image path and output path based on your file.
+
+
 ## 🚢 Datasets
 Prepare [COCO](https://cocodataset.org/#download) in mmpose/data/coco and [UBody](https://github.com/IDEA-Research/OSX) in mmpose/data/UBody.
 
